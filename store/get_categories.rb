@@ -6,6 +6,6 @@ require 'pp'
 user_name = 'YOUR_USER_NAME_HERE'
 license_key = 'YOUR_USER_LICENSE_KEY_HERE'
 auth = {:username => user, :password => pass}
-response = HTTParty.get("https://api.crystalcommerce.com/v1/stores/products", :basic_auth => auth)
+response = HTTParty.get("https://api.crystalcommerce.com/v1/stores/arux/products", :basic_auth => auth)
 parsed = JSON.parse(response.body)
 pp parsed
